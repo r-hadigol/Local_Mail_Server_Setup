@@ -24,7 +24,7 @@ sudo apt install postfix dovecot-imapd dovecot-pop3d mailutils -y
 **Postfix:** configure for "Internet Site" with system mail name: `bitbank.local`
 
 **Dovecot:** 
-vi /etc/dovecot/conf.d/10-mail.conf`
+vi /etc/dovecot/conf.d/10-mail.conf
 mail_location = maildir:~/Maildir
 sudo systemctl restart dovecot
 
